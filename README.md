@@ -4,20 +4,22 @@ Install tensor2tensor using
 pip install tensor2tensor
 ```
 ## Prepare the dataset
-Take two parallel dataset file for each language(English and Hind)  The train files will be train.en and traain.hi
-Put the training files under a folder named training
-compress the training folder to train_enhi.tar.gz
-Rename the train_enhi.tar.gz to train_enhi
-Again compress train_enhi to train_enhi.gz
-
-The dev files will be dev.en and dev.hi
-Put the dev.en and dev.hi files under a folder named dev
-compress the  dev folder dev.tar.gz
-Rename the dev.tar.gz to dev
-Again compress dev to dev.gz
-
-Now move train_enhi.gz and dev.gz to ~/t2t
-
+Take two parallel dataset file for each language(English and Hind)  <br/>
+The train files will be train.en and traain.hi <br/>
+Put the training files under a folder named training <br/>
+compress the training folder to train_enhi.tar.gz <br/>
+Rename the train_enhi.tar.gz to train_enhi <br/>
+Again compress train_enhi to train_enhi.gz <br/>
+<br/>
+<br/>
+The dev files will be dev.en and dev.hi <br/>
+Put the dev.en and dev.hi files under a folder named dev <br/>
+compress the  dev folder dev.tar.gz <br/>
+Rename the dev.tar.gz to dev <br/>
+Again compress dev to dev.gz <br/>
+<br/>
+Now move train_enhi.gz and dev.gz to ~/t2t <br/>
+<br/>
 ## Create new problem for tensor2tensor
 Go to 
 ```
