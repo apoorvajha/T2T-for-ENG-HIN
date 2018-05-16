@@ -4,8 +4,7 @@ Install tensor2tensor using
 pip install tensor2tensor
 ```
 ## Prepare the dataset
-Take two parallel dataset file for each language(English and Hind)\n
-The train files will be train.en and traain.hi\n
+Take two parallel dataset file for each language(English and Hind)  The train files will be train.en and traain.hi
 Put the training files under a folder named training
 compress the training folder to train_enhi.tar.gz
 Rename the train_enhi.tar.gz to train_enhi
