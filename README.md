@@ -55,7 +55,7 @@ _enhi_TRAIN_DATASETS = [
 
 _enhi_TEST_DATASETS = [
     [
-        "~/t2t//dev.gz",
+        "~/t2t/dev.gz",
         ("dev/dev.en", "dev/dev.hi")
     ],
 ]
