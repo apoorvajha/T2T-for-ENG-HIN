@@ -1,7 +1,8 @@
 # T2T-for-English to Hind
 Install tensor2tensor using 
+```
 pip install tensor2tensor
-
+```
 ## Prepare the dataset
 Take two parallel dataset file for each language(English and Hind)
 The train files will be train.en and traain.hi
@@ -20,11 +21,13 @@ Now move train_enhi.gz and dev.gz to ~/t2t
 
 ## Create new problem for tensor2tensor
 Go to 
+```
 ~/anaconda3/lib/python3.6/site-packages/tensor2tensor/data_generators
+```
 and open any exsisting model such as translate_enzh.py in text editor
 
 ## Replace (line 48)
-
+```
 _NC_TRAIN_DATASETS = [[
     "http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12"
     ".tgz", [
@@ -38,9 +41,9 @@ _NC_TEST_DATASETS = [[
     "http://data.statmt.org/wmt17/translation-task/dev.tgz",
     ("dev/newsdev2017-enzh-src.en.sgm", "dev/newsdev2017-enzh-ref.zh.sgm")
 ]]
-
+```
 ## to
-
+```
 _enhi_TRAIN_DATASETS = [
     [
         "~/t2t/train_enhi.gz",  # pylint: disable=line-too-long
@@ -55,10 +58,10 @@ _enhi_TEST_DATASETS = [
         ("dev/dev.en", "dev/dev.hi")
     ],
 ]
-
+```
 ## To Generate training data
 In terminal run
-
+```
 PROBLEM=translateenhi_main
 MODEL=transformer
 HPARAMS=transformer_base
@@ -68,8 +71,9 @@ t2t-datagen \
   --data_dir=$DATA_DIR \
   --tmp_dir=$TMP_DIR \
   --problem=$PROBLEM
-  
+```  
 ## To train the model
+```
 PROBLEM=translateenhi_main
 MODEL=transformer
 HPARAMS=transformer_base
@@ -86,7 +90,7 @@ t2t-trainer \
   --hparams_set=transformer_base \
   --train_steps=100000 \
   --eval_steps=10000
-  
+```
   
   
 
