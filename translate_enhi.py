@@ -40,7 +40,7 @@ EOS = text_encoder.EOS_ID
 
 _enhi_TRAIN_DATASETS = [
     [
-        "file:///home/hemanta/project/tensor2tensor/train_enhi.gz",  # pylint: disable=line-too-long
+        "~/t2t/train_enhi.gz",  # pylint: disable=line-too-long
         ("training/train.en",
          "training/train.hi")
     ],
@@ -48,7 +48,7 @@ _enhi_TRAIN_DATASETS = [
 
 _enhi_TEST_DATASETS = [
     [
-        "file:///home/hemanta/project/tensor2tensor/dev.gz",
+        "~/t2t/dev.gz",
         ("dev/dev.en", "dev/dev.hi")
     ],
 ]
