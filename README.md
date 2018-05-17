@@ -37,7 +37,7 @@ from tensor2tensor.data_generators import translate_enhi
 ## To Generate training data
 In terminal run
 ```
-PROBLEM=translateenhi_main
+PROBLEM=translateenhi
 MODEL=transformer
 HPARAMS=transformer_base
 DATA_DIR=$HOME/t2t_data
@@ -49,7 +49,7 @@ t2t-datagen \
 ```  
 ## To train the model
 ```
-PROBLEM=Translateenhi
+PROBLEM=translateenhi
 MODEL=transformer
 HPARAMS=transformer_base
 DATA_DIR=$HOME/t2t_data
