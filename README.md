@@ -25,41 +25,15 @@ Go to
 ```
 ~/anaconda3/lib/python3.6/site-packages/tensor2tensor/data_generators
 ```
-and open any exsisting model such as translate_enzh.py in text editor
-
-## Replace (line 48)
+download the translate_enhi.py and paste it on data_generator directory
+<br/>
+open all_problems.py under data_generaor folder using any text editor and add this line at the beginning 
 ```
-_NC_TRAIN_DATASETS = [[
-    "http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12"
-    ".tgz", [
-        "training/news-commentary-v12.zh-en.en",
-        "training/news-commentary-v12.zh-en.zh"
-    ]
-]]
+from tensor2tensor.data_generators import translate_enhi
+```
 
 
-_NC_TEST_DATASETS = [[
-    "http://data.statmt.org/wmt17/translation-task/dev.tgz",
-    ("dev/newsdev2017-enzh-src.en.sgm", "dev/newsdev2017-enzh-ref.zh.sgm")
-]]
-```
-## to
-```
-_enhi_TRAIN_DATASETS = [
-    [
-        "~/t2t/train_enhi.gz",  # pylint: disable=line-too-long
-        ("training/train.en",
-         "training/train.hi")
-    ],
-]
 
-_enhi_TEST_DATASETS = [
-    [
-        "~/t2t/dev.gz",
-        ("dev/dev.en", "dev/dev.hi")
-    ],
-]
-```
 ## To Generate training data
 In terminal run
 ```
@@ -75,7 +49,7 @@ t2t-datagen \
 ```  
 ## To train the model
 ```
-PROBLEM=translateenhi_main
+PROBLEM=Translateenhi
 MODEL=transformer
 HPARAMS=transformer_base
 DATA_DIR=$HOME/t2t_data
