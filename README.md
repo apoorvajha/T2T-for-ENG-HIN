@@ -1,4 +1,4 @@
-# T2T-for-English to Hind
+# T2T-for-English to Hindi
 Install tensor2tensor using 
 ```
 pip install tensor2tensor
