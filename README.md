@@ -13,11 +13,10 @@ Put these two files under a folder named training inside $HOME/t2t_data director
 The dev files will be dev.en and dev.hi <br/>
 Put the dev.en and dev.hi files under a folder named dev <br/>
 Put this dev folder inside $HOME/t2t_data directory  <br/>
-
 <br/>
 
-<br/>
 ## Create new problem for tensor2tensor
+
 Go to 
 ```
 ~/anaconda3/lib/python3.6/site-packages/tensor2tensor/data_generators
