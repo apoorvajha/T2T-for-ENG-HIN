@@ -57,14 +57,13 @@ TMP_DIR=/tmp/t2t_datagen
 TRAIN_DIR=$HOME/t2t_train/$PROBLEM/$MODEL-$HPARAMS
 mkdir -p $DATA_DIR $TMP_DIR $TRAIN_DIR
 t2t-trainer \
-  --generate_data \
-  --data_dir=~/t2t_data \
-  --output_dir=~/t2t_train \
-  --problem=translateenhi_main \
-  --model=transformer \
-  --hparams_set=transformer_base \
-  --train_steps=100000 \
-  --eval_steps=10000
+  --data_dir=$DATA_DIR \
+  --problems=$PROBLEM \
+  --model=$MODEL \
+  --hparams_set=$HPARAMS \
+  --output_dir=$TRAIN_DIR \
+  --train_steps=1000 \
+  --eval_steps=100
 ```
   
   
